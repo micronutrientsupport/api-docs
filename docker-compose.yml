@@ -4,5 +4,5 @@ services:
         ports:
             - '3123:3123'
         environment:
-            - OPENAPI_PATH=http://testy.kube-idev.bgslcdevops.test:3000/openapi.json
+            - OPENAPI_PATH=http://localhost:3000/openapi.json
         build: .
