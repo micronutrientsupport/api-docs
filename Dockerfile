@@ -9,5 +9,7 @@ RUN tar --strip-components 1 -xzf dapperdox-1.2.2.linux-amd64.tgz dapperdox-1.2.
 
 COPY . .
 
+EXPOSE 3213
+
 CMD [ "sh", "run.sh" ]
 
