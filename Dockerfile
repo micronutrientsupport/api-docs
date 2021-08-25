@@ -1,6 +1,6 @@
 FROM alpine:3
 
-RUN apk update && apk add curl
+RUN apk update && apk add --no-cache curl bash
 
 WORKDIR /app
 
@@ -11,5 +11,5 @@ COPY . .
 
 EXPOSE 3213
 
-CMD [ "sh", "wait-for-it.sh", "${OPENAPI_PATH}", "run.sh"]
+CMD [ "wait-for-it.sh", "${OPENAPI_PATH}", "run.sh"]
 
