@@ -11,5 +11,5 @@ COPY . .
 
 EXPOSE 3213
 
-CMD [ "bash",  "wait-for-it.sh", ${OPENAPI_PATH}, "run.sh"]
+CMD [ "bash",  "-c", "wait-for-it.sh ${OPENAPI_PATH} run.sh"]
 
