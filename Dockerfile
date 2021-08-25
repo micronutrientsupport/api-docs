@@ -9,7 +9,9 @@ RUN tar --strip-components 1 -xzf dapperdox-1.2.2.linux-amd64.tgz dapperdox-1.2.
 
 COPY . .
 
+RUN chmod +x ./run.sh ./wait-for-it.sh
+
 EXPOSE 3213
 
-CMD [ "bash",  "-c", "wait-for-it.sh ${OPENAPI_PATH} run.sh"]
+CMD [ "sh",  "-c", "bash ./wait-for-it.sh --strict ${API_URL} -- sh ./run.sh"]
 
