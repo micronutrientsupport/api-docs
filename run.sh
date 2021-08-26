@@ -10,8 +10,8 @@ cat ./specs/swagger.json
  -bind-addr 0.0.0.0:3123 \
  -spec-dir ./specs/ \
  -assets-dir ./content \
- -force-specification-list true \ 
  -theme=dapperdox-theme-maps \
- -theme-dir ./themes/
+ -theme-dir ./themes/ \
+ -force-specification-list true \ 
 
 
