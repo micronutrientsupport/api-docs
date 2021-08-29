@@ -10,4 +10,6 @@ The following APIs are utilised by the MAPS project to provide data to the [Micr
 
 [[additional]]
 
+---
+
 For terms of use, please visit [https://data.micronutrient.support](https://data.micronutrient.support)
