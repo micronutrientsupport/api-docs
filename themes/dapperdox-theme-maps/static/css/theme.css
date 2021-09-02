@@ -22,3 +22,37 @@ img[alt="MAPS Logo"] {
     padding-top: 0.5em;
     width: 80%;
 }
+
+#response_body {
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+html {
+    --scrollbarBG: #1c6f6f;
+    --thumbBG: darkcyan;
+  }
+
+  #response_body::-webkit-scrollbar {
+    width: 18px;
+  }
+  #response_body {
+    scrollbar-width: auto;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+/*  #response_body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }*/
+  #response_body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 2px solid var(--scrollbarBG);
+  }
+
+  #apiexplorer .header {
+    display: none;
+  }
+
+  #apiexplorer #response-mime-group {
+    border-top: 2px solid #1c6f6f;
+  }

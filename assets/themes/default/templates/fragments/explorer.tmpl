@@ -46,7 +46,7 @@
             </tr>
         [: end :]
         [: range .Method.HeaderParams :]
-            <tr class="form-group">
+            <tr class="form-group header">
                 <td>[: .Name :]</td>
                 <td>[: template "explorer_input" (map "Param" . "Section" "header") :]</td>
                 <td>[: safehtml .Description :]</td>
